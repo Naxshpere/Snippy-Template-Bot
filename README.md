@@ -1,51 +1,59 @@
-# Snippy
+**Snippy – The Ultimate Discord Server Dupe Bot (No Cap, Fr)**
 
-Snippy is a Discord server template bot developed by NEX.
+Yo, Snippy’s the bot that lets you **clone your Discord server like a boss** no manual setup, no stress. Made by NEX, it’s the **CTRL+C / CTRL+V** of Discord servers. Save your whole layout, then slap it onto another server with **slash commands only**. No fluff, just **pure efficiency**.
 
-It lets you save a server layout as a reusable template and apply that template to another server with slash commands.
+---
 
-## Features
+### **What’s the Move?**
+- **`/template`** – Save your server’s whole **vibe** (roles, channels, the works)
+- **`/templist`** – Peep all your saved templates (like a digital mood board)
+- **`/temp`** – Import roles, channels, or the **entire server** with one command
+- **SQLite storage** – No cloud, no drama, just **local data** (safe & sound)
 
-- Save a server structure with `/template`
-- Browse saved templates with `/templist`
-- Import roles, channels, or a full template with `/temp`
-- Store template data locally with SQLite
+---
 
-## Commands
+### **Commands (Keep It 100)**
+- **`/template name:<name> description:<description>`** – Save your server’s **aesthetic**
+- **`/templist`** – Browse your saved templates (like a **Discord Pinterest**)
+- **`/temp code:<template_code> server_name:<new_name>`** – **Duplicate that server** like a pro
 
-- `/template name:<name> description:<description>`
-- `/templist`
-- `/temp code:<template_code> server_name:<new_name>`
+---
 
-## Setup
+### **Setup (No L, Just W’s)**
+1. **`npm install`** – Get the deps (no excuses)
+2. **`.env` file** – Copy `.env.example`, plug in your **bot token & client ID**
+3. **`npm run deploy`** – Register those **smooth slash commands**
+4. **`npm start`** – Fire it up and **let it rip**
 
-1. Install dependencies with `npm install`
-2. Create a local `.env` file from `.env.example`
-3. Add your Discord bot token and client ID to `.env`
-4. Register slash commands with `npm run deploy`
-5. Start the bot with `npm start`
+---
 
-## Environment Variables
-
+### **Env File (Don’t Sleep on This)**
 ```env
-DISCORD_TOKEN=your_discord_bot_token
-CLIENT_ID=your_discord_application_id
+DISCORD_TOKEN=your_bot_token_here_keep_it_secret_keep_it_safe
+CLIENT_ID=your_app_id_goes_here
 ```
+*(Pro tip: `.env` is ignored so your token stays **secure**—no leaks, no stress.)*
 
-## GitHub Notes
+---
 
-- `.env` is ignored so your token is not committed
-- `templates.db` is ignored and will be recreated automatically when the bot starts
-- The repository is now cleaned for publishing without bundled runtime data
+### **GitHub Stuff (For the Devs)**
+- **`.env` & `templates.db` are ignored** – No accidental commits, no mess
+- **Repo’s clean** – No random junk, just **pure, functional code**
 
-## Project Structure
+---
 
-- `index.js` starts the bot and handles interactions
-- `deploy-commands.js` registers slash commands
-- `commands/` contains the slash command handlers
-- `utils/templateManager.js` manages template storage
-- `database.js` initializes the SQLite database
+### **Project Breakdown (For the Tech Heads)**
+- **`index.js`** – Bot startup + **command handling** (the **brain**)
+- **`deploy-commands.js`** – Slash command **registration** (the **setup**)
+- **`commands/`** – Where the **magic happens** (command logic)
+- **`utils/templateManager.js`** – **Template storage** (the **vault**)
+- **`database.js`** – SQLite **initialization** (the **backbone**)
 
-## Branding Note
+---
 
-This repo is branded as `Snippy` by `NEX`. If you also want the Discord bot account itself to display the name `Snippy`, update the application username in Discord's developer settings.
+### **Branding Flex (Make It Official)**
+This is **Snippy by NEX**—if you want the bot’s name to match, **rename the app in Discord’s dev settings**. No weak branding, just **pure consistency**.
+
+---
+
+**Snippy’s the move.** Clone servers **fast**, keep it **clean**, and **never manually set up roles again**. 🚀
